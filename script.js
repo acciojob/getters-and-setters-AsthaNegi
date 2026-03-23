@@ -5,13 +5,21 @@ class Person {
      this.age=age;
    }
 
+	set name(newName){
+       this._name=newName;
+     }
+
 	get name(){
-       return `${this._name}`;
+       return this._name;
     }
 
 	set age(newAge){
        this._age=newAge;
     }
+
+	get age(){
+       return this._age;
+	}
    
 }
 
